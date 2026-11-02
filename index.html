@@ -6,6 +6,8 @@
   <title>CrispList Support</title>
   <meta name="description" content="Help and support for CrispList: Shopping List for iPhone.">
   <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <style>
@@ -65,7 +67,7 @@
     nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 52px; }
     .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 600; font-size: 19px; letter-spacing: -0.02em; }
     .brand:hover { text-decoration: none; }
-    .brand svg { width: 28px; height: 28px; flex: none; }
+    .brand img { width: 28px; height: 28px; flex: none; border-radius: 22.5%; display: block; }
     .nav-links { display: flex; gap: 22px; font-size: 14px; }
     .nav-links a { color: var(--text-2); }
     .nav-links a:hover { color: var(--text); text-decoration: none; }
@@ -73,7 +75,7 @@
 
     /* Hero */
     .hero { text-align: center; padding: 80px 0 64px; }
-    .hero .icon { width: 96px; height: 96px; margin: 0 auto 24px; }
+    .hero .icon { width: 96px; height: 96px; margin: 0 auto 24px; border-radius: 22.5%; display: block; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
     .eyebrow { color: var(--accent); font-weight: 600; font-size: 17px; margin-bottom: 8px; }
     h1 { font-size: clamp(40px, 7vw, 64px); line-height: 1.06; font-weight: 700; letter-spacing: -0.03em; }
     .lead { color: var(--text-2); font-size: clamp(19px, 2.4vw, 24px); line-height: 1.35; max-width: 640px; margin: 18px auto 0; }
@@ -151,10 +153,7 @@
   <nav aria-label="Main">
     <div class="wrap">
       <a class="brand" href="./">
-        <svg viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="15" fill="#0B7A3A"/>
-          <path d="M19 33.5l8.5 8.5L46 23" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <img src="icon.png" alt="" width="28" height="28">
         CrispList
       </a>
       <div class="nav-links">
@@ -167,10 +166,7 @@
   <main>
     <header class="hero">
       <div class="wrap">
-        <svg class="icon" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="15" fill="#0B7A3A"/>
-          <path d="M19 33.5l8.5 8.5L46 23" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <img class="icon" src="icon.png" alt="CrispList app icon" width="96" height="96">
         <p class="eyebrow">CrispList Support</p>
         <h1>How can we help?</h1>
         <p class="lead">Answers to common questions about CrispList: Shopping List for iPhone, and an easy way to reach us.</p>
